@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Task Room</string>
+    <string name="next">next</string>
+    <string name="status">status</string>
+    <string name="mainfragment">MainFragment</string>
+    <string name="taskDescription">description</string>
+    <string name="taskTitle">title</string>
+    <string name="edit">edit</string>
+    <string name="prev">prev</string>
+    <string name="new_task">new</string>
+    <string name="delete">delete</string>
+    <string name="add">add</string>
 </resources>
