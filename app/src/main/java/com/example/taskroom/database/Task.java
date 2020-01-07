@@ -9,7 +9,7 @@ public class Task {
 
     @ColumnInfo
     @PrimaryKey(autoGenerate=true)
-    Long taskId;
+    private Long taskId;
 
     @ColumnInfo
     private String title;
@@ -25,6 +25,10 @@ public class Task {
 
     public Long getTaskId() {
         return taskId;
+    }
+
+    public void setTaskId(Long taskId) {
+        this.taskId = taskId;
     }
 
     public String getTitle() {

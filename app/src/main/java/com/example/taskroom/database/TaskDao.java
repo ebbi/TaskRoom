@@ -14,7 +14,7 @@ import java.util.List;
 public interface TaskDao {
 
     @Query("SELECT * FROM Task ORDER BY taskId")
-    LiveData<List<Task>> getTasks();
+    LiveData<List<Task>> getLiveDataTasks();
 
     @Query("DELETE FROM Task")
     void deleteAllTasks();
@@ -22,25 +22,19 @@ public interface TaskDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     void insertTask(Task task);
 
+    @Delete
+    void deleteTask(Task task);
+
 /*
+
     @Query("SELECT * FROM Task where taskId = :id")
     Task getTaskById(long id);
-
-    @Query("SELECT * FROM Task WHERE taskId > :id ORDER BY :id LIMIT 1")
-    Task getNextTask(long id);
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     void insertTasks(List<Task> tasks);
 
     @Update
     void updateTask(Task task);
-
-    @Delete
-    void deleteTask(Task task);
-
-    @Delete
-    void deleteTasks(List<Task> tasks);
-
 
  */
 
