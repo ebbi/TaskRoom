@@ -10,4 +10,5 @@
     <string name="new_task">new</string>
     <string name="delete">delete</string>
     <string name="add">add</string>
+    <string name="DB_TASKS_EMPTY">Database tasks is empty</string>
 </resources>

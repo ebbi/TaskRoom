@@ -81,7 +81,7 @@ public class MainFragment extends Fragment {
                 if (mTasks.isEmpty()){
 
                     Log.d( LOG_TAG, "setupViewModel Database tasks is empty");
-                    mTextViewTitle.setText("Database tasks is empty");
+                    mTextViewTitle.setText(R.string.DB_TASKS_EMPTY);
                     mTask = null;
                     mMainViewModel.setTask(mTask);
 

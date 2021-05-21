@@ -11,8 +11,8 @@ public class TaskRepository {
 
     private static final String LOG_TAG = TaskRepository.class.getSimpleName();
 
-    private TaskDao mTaskDao;
-    private LiveData<List<Task>> mLiveDataTasks;
+    private final TaskDao mTaskDao;
+    private final LiveData<List<Task>> mLiveDataTasks;
 
     public TaskRepository(Application application) {
         Log.d( LOG_TAG, "TaskRepository");

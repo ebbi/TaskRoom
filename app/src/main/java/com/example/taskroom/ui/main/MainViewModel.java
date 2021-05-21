@@ -14,9 +14,9 @@ import java.util.List;
 public class MainViewModel extends AndroidViewModel {
 
     private static final String LOG_TAG = MainViewModel.class.getSimpleName();
-    private TaskRepository mTaskRepository;
+    private final TaskRepository mTaskRepository;
 
-    private LiveData<List<Task>> liveDataTasks;
+    private final LiveData<List<Task>> liveDataTasks;
     private List<Task> mTasks;
     private Task mTask;
 
